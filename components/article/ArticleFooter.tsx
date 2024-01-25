@@ -16,6 +16,7 @@ type Props = {
     publisher?: string;
     datePublished: string;
     url: string;
+    link?: string;
     doi?: string;
   }[];
   keywords?: string[];
@@ -115,8 +116,12 @@ const ArticleFooter: FC<Props> = ({
                 </time>
               )}
               {item.url && (
-                <cite className="citation citation-location" id="location">
-                  &nbsp;{item.url}.
+                <cite
+                  className="citation citation-location"
+                  id="location"
+                  title={item.link}
+                >
+                  &nbsp;{item.link}.
                 </cite>
               )}
               {item.doi && <cite id="doi">&nbsp;{item.doi},</cite>}
