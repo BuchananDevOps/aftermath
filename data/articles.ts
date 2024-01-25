@@ -53,7 +53,7 @@ export const articles = [
     thumbnail: "/articles/design-systems/article-image.webp",
     thumbnailUrl:
       "https://buchanandevops.com/articles/design-systems/article-image.webp",
-    image: "public/articles/design-systems/article-image.webp",
+    image: "/articles/design-systems/article-image.webp",
     timeRequired: "25 mins",
     wordCount: "900",
   },
@@ -69,8 +69,8 @@ export const articles = [
         articleSection: "The Incident",
         paragraph:
           "As the group of two cars embarked on a tight turnabout to correct their course, an unexpected tragedy unfolded. The first vehicle executed the maneuver without incident, but as the second car, carrying Kaylin, completed its turn, two gunshots reverberated from a 20-gauge shotgun, altering the course of that night irreversibly. The result: a devastating wound to Kaylin's neck.",
-        image: "",
-        alt: "",
+        image: "/articles/crime/murder-of-kaylin-gillis/ny-upstate-driveway-shooting-comp.webp",
+        alt: "Upstate New York Home where Kevin Monahan Murdered Kalin Gillis",
       },
       {
         paragraph:
@@ -96,8 +96,8 @@ export const articles = [
         articleSection: "The Two Week Trial",
         paragraph:
           "During the two-week trial, the 66-year-old Mr. Monahan took the stand, asserting that the fatal shot had been an inadvertent occurrence. He claimed that the gun discharged spontaneously as he tripped on his porch, having fired an initial warning shot upon sighting a convoy of two cars and a motorcycle approaching his residence at night. His defense painted him as an elderly individual, asleep and gripped by fear that a supposed group of assailants, akin to marauders, had come to attack him and his wife, Jinx, who was concealed inside the house, armed in self-defense.",
-        image: "",
-        alt: "",
+        image: "/articles/crime/murder-of-kaylin-gillis/kevin-monahan-prison.webp",
+        alt: "Kevin Monahan Trial arraignment and dressed in his prison clothes.",
       },
       {
         paragraph:
