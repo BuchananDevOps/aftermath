@@ -19,7 +19,7 @@ export type Article = {
   citation?: Citation[];
   datePublished: string;
   description: string;
-  genre: "Web Design" | "Development" | "Seo";
+  genre: "National" | "World" | "Politics" | "True Crime";
   headline: string;
   keywords: string[];
   mentions: Mentions[];

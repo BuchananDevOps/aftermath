@@ -1,8 +1,10 @@
 import DateFormatter from "../DateFormatter";
-import ArticleAuthor from "./Author";
 import GenreBadge from "./GenreBadge";
 import { CalendarDaysIcon, ClockIcon } from "@heroicons/react/24/outline";
+import { Playfair_Display } from "next/font/google";
 import { FC } from "react";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 type Props = {
   headline: string;
@@ -20,7 +22,7 @@ const ArticleHeader: FC<Props> = ({
   return (
     <div className="text-black" id="article_heading">
       <h1
-        className="col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]"
+        className={`col-start-1 row-start-2 mt-4  text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl ${playfair.className}`}
         id="article_heading_headline"
       >
         {headline}
@@ -29,12 +31,7 @@ const ArticleHeader: FC<Props> = ({
         className="flex flex-col md:flex-row md:items-center"
         id="article_heading_info"
       >
-        <ArticleAuthor
-          handle={"buchanandevops"}
-          image={"/author/headshot-bright.jpg"}
-          name={"John Buchanan"}
-        />
-        <div className="flex flex-wrap md:flex-row" id="">
+        <div className="flex flex-wrap md:flex-row mt-4" id="">
           <div className="flex flex-row mx-2 my-2" id="article_heading_date">
             <CalendarDaysIcon className="h-6 w-6 mr-1" />
             <time>

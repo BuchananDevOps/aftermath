@@ -1,5 +1,8 @@
+import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import React, { FC } from "react";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 type Props = {
   articleBody: {
@@ -19,9 +22,8 @@ const ArticleBody: FC<Props> = ({ articleBody, backstory }) => {
         {backstory && (
           <>
             <h2
-              className=" text-3xl font-extrabold tracking-tight text-slate-900 mt-4"
+              className={`${playfair.className} text-3xl font-extrabold tracking-tight text-slate-900 mt-4`}
               id="article_backstory_section_title"
-              itemProp="backstory"
             >
               Backstory
             </h2>
@@ -40,14 +42,13 @@ const ArticleBody: FC<Props> = ({ articleBody, backstory }) => {
                 className=""
                 height={400}
                 id="article_body_image"
-                itemProp="image"
                 src={paragraph.image}
                 width={600}
               />
             )}
             {paragraph.articleSection && (
               <h2
-                className=" text-3xl font-extrabold tracking-tight text-slate-900 mt-4"
+                className={` ${playfair.className} text-3xl font-extrabold tracking-tight text-slate-900 mt-4`}
                 id="article_body_section_title"
               >
                 {paragraph.articleSection}
