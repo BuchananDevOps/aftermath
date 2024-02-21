@@ -13,6 +13,14 @@ abbr[title] {
   text-decoration: none;
 }
 
+.art-container {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .case-tab {
 }
 

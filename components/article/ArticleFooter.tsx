@@ -30,10 +30,13 @@ const ArticleFooter: FC<Props> = ({
   className,
 }) => {
   return (
-    <div className={`${className} text-black`} id="article_footer">
+    <div
+      className={`${className} text-black max-w-3xl mx-auto px-5`}
+      id="article_footer"
+    >
       <div className="" id="article_footer_keywords">
         {keywords && (
-          <h6 className="font-extrabold tracking-tight text-slate-900 mt-4">
+          <h6 className="font-extrabold tracking-tight text-slate-900 mt-4 max-w">
             Tags:
           </h6>
         )}
